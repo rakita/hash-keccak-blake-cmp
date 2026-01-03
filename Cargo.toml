@@ -1,0 +1,17 @@
+[package]
+name = "hashcmp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alloy-primitives = "0.8"
+blake2 = "0.10"
+blake3 = "1.5"
+
+[dev-dependencies]
+criterion = "0.5"
+rand = "0.8"
+
+[[bench]]
+name = "hash_bench"
+harness = false
